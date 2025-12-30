@@ -252,7 +252,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Программа курса</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Структурированный путь длительностью 12 недель с еженедельными модулями и практическими заданиями
+              Структурированный путь длительностью 7 недель с еженедельными модулями и практическими заданиями
             </p>
           </div>
 
@@ -262,16 +262,15 @@ const Index = () => {
               <Card className="border-2 hover:border-accent transition-colors">
                 <CardContent className="pt-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-semibold">Модуль 1-3: Понимание проблемы</h3>
-                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Недели 1-3</span>
+                    <h3 className="text-xl font-semibold">Модуль 1: Осознание и принятие</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 1</span>
                   </div>
                   <p className="text-muted-foreground mb-4">
-                    Нейробиология зависимости, выявление триггеров, осознанность и самонаблюдение
+                    Понимание природы зависимости, нейробиология привычек, первичная самодиагностика
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Дневник триггеров</span>
-                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Медитация</span>
                     <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Оценка состояния</span>
+                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Дневник триггеров</span>
                   </div>
                 </CardContent>
               </Card>
@@ -282,16 +281,15 @@ const Index = () => {
               <Card className="border-2 hover:border-secondary transition-colors">
                 <CardContent className="pt-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-semibold">Модуль 4-7: Развитие навыков</h3>
-                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Недели 4-7</span>
+                    <h3 className="text-xl font-semibold">Модуль 2: Выявление триггеров</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 2</span>
                   </div>
                   <p className="text-muted-foreground mb-4">
-                    Техники саморегуляции, работа с эмоциями, когнитивная реструктуризация, управление стрессом
+                    Картирование ситуаций и эмоций, которые запускают паттерн, создание плана избегания
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">CBT упражнения</span>
-                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Дыхательные практики</span>
-                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Журналинг</span>
+                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Анализ триггеров</span>
+                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Карта рисков</span>
                   </div>
                 </CardContent>
               </Card>
@@ -302,16 +300,72 @@ const Index = () => {
               <Card className="border-2 hover:border-primary transition-colors">
                 <CardContent className="pt-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-semibold">Модуль 8-10: Глубокая трансформация</h3>
-                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Недели 8-10</span>
+                    <h3 className="text-xl font-semibold">Модуль 3: Техники саморегуляции</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 3</span>
                   </div>
                   <p className="text-muted-foreground mb-4">
-                    Работа с глубинными убеждениями, выстраивание здоровых отношений, поиск смысла и ценностей
+                    Дыхательные практики, медитация осознанности, методы экстренной остановки импульсов
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Терапия принятия</span>
+                    <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Медитация</span>
+                    <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Дыхание</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="relative pl-8 pb-8 border-l-2 border-accent">
+              <div className="absolute -left-3 top-0 w-6 h-6 bg-accent rounded-full border-4 border-background"></div>
+              <Card className="border-2 hover:border-accent transition-colors">
+                <CardContent className="pt-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-xl font-semibold">Модуль 4: Когнитивная перестройка</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 4</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    CBT-техники для изменения негативных убеждений и автоматических мыслей
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">CBT упражнения</span>
+                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Журналинг</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="relative pl-8 pb-8 border-l-2 border-secondary">
+              <div className="absolute -left-3 top-0 w-6 h-6 bg-secondary rounded-full border-4 border-background"></div>
+              <Card className="border-2 hover:border-secondary transition-colors">
+                <CardContent className="pt-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-xl font-semibold">Модуль 5: Построение новых привычек</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 5</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    Замена деструктивных паттернов на здоровые активности, спорт, хобби, социальные связи
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">План активностей</span>
+                    <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full">Трекер привычек</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="relative pl-8 pb-8 border-l-2 border-primary">
+              <div className="absolute -left-3 top-0 w-6 h-6 bg-primary rounded-full border-4 border-background"></div>
+              <Card className="border-2 hover:border-primary transition-colors">
+                <CardContent className="pt-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-xl font-semibold">Модуль 6: Работа с ценностями</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 6</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    ACT-терапия принятия, определение жизненных приоритетов, выстраивание смыслов
+                  </p>
+                  <div className="flex flex-wrap gap-2">
                     <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Ценностные упражнения</span>
-                    <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Групповая работа</span>
+                    <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Визуализация будущего</span>
                   </div>
                 </CardContent>
               </Card>
@@ -322,16 +376,15 @@ const Index = () => {
               <Card className="border-2 hover:border-accent transition-colors">
                 <CardContent className="pt-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-semibold">Модуль 11-12: Закрепление и профилактика</h3>
-                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Недели 11-12</span>
+                    <h3 className="text-xl font-semibold">Модуль 7: Профилактика рецидивов</h3>
+                    <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">Неделя 7</span>
                   </div>
                   <p className="text-muted-foreground mb-4">
-                    План предотвращения рецидивов, долгосрочная стратегия, интеграция в повседневную жизнь
+                    Создание долгосрочного плана поддержки, стратегии в кризисных ситуациях, подведение итогов
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">План действий</span>
-                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Стратегия поддержки</span>
-                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Подведение итогов</span>
+                    <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">Кризисная карта</span>
                   </div>
                 </CardContent>
               </Card>
@@ -342,66 +395,85 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Что вы получаете</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Формат обучения</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Мы используем комбинированный подход для максимальной эффективности
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 border-accent bg-gradient-to-br from-accent/5 to-transparent">
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-2 hover:border-accent transition-colors">
               <CardContent className="pt-8 space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name="Infinity" size={28} className="text-accent-foreground" />
-                  </div>
-                  <h3 className="text-2xl font-semibold">Пожизненная поддержка</h3>
+                <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="Video" size={28} className="text-accent" />
                 </div>
-                <p className="text-muted-foreground text-lg">
-                  Неограниченный доступ к материалам курса и возможность консультироваться со специалистами в любой момент вашей жизни
+                <h3 className="text-xl font-semibold text-center">Видеолекции</h3>
+                <p className="text-muted-foreground text-center">
+                  Структурированный теоретический материал от ведущих специалистов в области психотерапии
                 </p>
-                <ul className="space-y-2 pt-4">
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground">Еженедельные групповые сессии</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground">Индивидуальные консультации при необходимости</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground">Доступ к обновлениям программы</span>
-                  </li>
-                </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-secondary bg-gradient-to-br from-secondary/5 to-transparent">
+            <Card className="border-2 hover:border-secondary transition-colors">
               <CardContent className="pt-8 space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name="Users" size={28} className="text-secondary-foreground" />
-                  </div>
-                  <h3 className="text-2xl font-semibold">Закрытое сообщество</h3>
+                <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="BookOpen" size={28} className="text-secondary" />
                 </div>
-                <p className="text-muted-foreground text-lg">
-                  Доступ к приватному сообществу выпускников — безопасное пространство для обмена опытом и взаимной поддержки
+                <h3 className="text-xl font-semibold text-center">Практические задания</h3>
+                <p className="text-muted-foreground text-center">
+                  Еженедельные упражнения и техники для закрепления навыков в реальной жизни
                 </p>
-                <ul className="space-y-2 pt-4">
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={20} className="text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">Модерируемый чат 24/7</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={20} className="text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">Партнёры по подотчётности</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={20} className="text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">Регулярные встречи и вебинары</span>
-                  </li>
-                </ul>
               </CardContent>
             </Card>
+
+            <Card className="border-2 hover:border-primary transition-colors">
+              <CardContent className="pt-8 space-y-4">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                  <Icon name="MessageCircle" size={28} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-center">Групповые сессии</h3>
+                <p className="text-muted-foreground text-center">
+                  Еженедельные встречи в малых группах для обмена опытом и поддержки
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-16 bg-gradient-to-r from-accent/10 via-secondary/10 to-primary/10 p-8 rounded-lg border-2">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Пожизненная поддержка</h3>
+                <p className="text-muted-foreground mb-6">
+                  После завершения основной программы вы получаете постоянный доступ к закрытому сообществу выпускников и специалистам
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
+                    <span>Модерируемый чат поддержки 24/7</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
+                    <span>Ежемесячные вебинары и встречи</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
+                    <span>Доступ к обновлениям программы</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white/50 p-6 rounded-lg">
+                <div className="text-center space-y-4">
+                  <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto">
+                    <Icon name="Users" size={36} className="text-secondary-foreground" />
+                  </div>
+                  <h4 className="text-xl font-semibold">Закрытое сообщество</h4>
+                  <p className="text-muted-foreground">
+                    Более 500+ выпускников, которые поддерживают друг друга на пути к свободе
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
