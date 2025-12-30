@@ -9,13 +9,16 @@ const Index = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    const subject = encodeURIComponent('Новая заявка на курс');
+    const body = encodeURIComponent(
+      `Имя: ${formData.name}\nEmail: ${formData.email}\nСообщение: ${formData.message || 'Не указано'}`
+    );
+    window.location.href = `mailto:sabrekov86.86@mail.ru?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -429,36 +432,23 @@ const Index = () => {
           </div>
 
           <div className="mt-16 bg-gradient-to-r from-accent/10 via-secondary/10 to-primary/10 p-8 rounded-lg border-2">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Пожизненная поддержка</h3>
-                <p className="text-muted-foreground mb-6">
-                  После завершения основной программы вы получаете постоянный доступ к закрытому сообществу выпускников и специалистам
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
-                    <span>Модерируемый чат поддержки 24/7</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
-                    <span>Ежемесячные вебинары и встречи</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="Check" size={20} className="text-accent flex-shrink-0" />
-                    <span>Доступ к обновлениям программы</span>
-                  </div>
+            <div className="text-center max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold mb-4">Пожизненная поддержка</h3>
+              <p className="text-muted-foreground mb-6">
+                После завершения основной программы вы получаете постоянный доступ к материалам курса и возможность консультироваться со специалистами
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="flex flex-col items-center gap-3">
+                  <Icon name="Check" size={24} className="text-accent" />
+                  <span className="text-center">Доступ к обновлениям программы</span>
                 </div>
-              </div>
-              <div className="bg-white/50 p-6 rounded-lg">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto">
-                    <Icon name="Users" size={36} className="text-secondary-foreground" />
-                  </div>
-                  <h4 className="text-xl font-semibold">Закрытое сообщество</h4>
-                  <p className="text-muted-foreground">
-                    Более 500+ выпускников, которые поддерживают друг друга на пути к свободе
-                  </p>
+                <div className="flex flex-col items-center gap-3">
+                  <Icon name="Check" size={24} className="text-accent" />
+                  <span className="text-center">Консультации по email</span>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <Icon name="Check" size={24} className="text-accent" />
+                  <span className="text-center">Дополнительные материалы</span>
                 </div>
               </div>
             </div>
@@ -508,21 +498,6 @@ const Index = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium">
-                    Телефон
-                  </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+7 (999) 123-45-67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    required
-                    className="border-2"
-                  />
-                </div>
-
-                <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
                     Ваше сообщение (необязательно)
                   </label>
@@ -566,16 +541,17 @@ const Index = () => {
             <div>
               <h3 className="font-semibold text-lg mb-3">Контакты</h3>
               <div className="space-y-2 text-sm text-primary-foreground/80">
-                <p>Email: support@recovery-program.com</p>
-                <p>Телефон: +7 (800) 123-45-67</p>
-                <p>Круглосуточная поддержка</p>
+                <p>Email: sabrekov86.86@mail.ru</p>
               </div>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-3">Конфиденциальность</h3>
-              <p className="text-primary-foreground/80 text-sm">
-                Мы гарантируем полную анонимность и защиту ваших персональных данных
+              <h3 className="font-semibold text-lg mb-3">Политика конфиденциальности</h3>
+              <p className="text-primary-foreground/80 text-sm mb-3">
+                Мы гарантируем полную анонимность и защиту ваших персональных данных согласно законодательству РФ
               </p>
+              <a href="#" className="text-primary-foreground/80 text-sm underline hover:text-primary-foreground">
+                Подробнее о политике конфиденциальности
+              </a>
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
