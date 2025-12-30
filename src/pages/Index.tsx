@@ -398,19 +398,19 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Формат обучения</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Мы используем комбинированный подход для максимальной эффективности
+              Полностью текстовый формат для максимального удобства и конфиденциальности
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="border-2 hover:border-accent transition-colors">
               <CardContent className="pt-8 space-y-4">
                 <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
-                  <Icon name="Video" size={28} className="text-accent" />
+                  <Icon name="FileText" size={28} className="text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold text-center">Видеолекции</h3>
+                <h3 className="text-xl font-semibold text-center">Текстовые материалы</h3>
                 <p className="text-muted-foreground text-center">
-                  Структурированный теоретический материал от ведущих специалистов в области психотерапии
+                  Подробные статьи и руководства с научным обоснованием, которые можно изучать в удобном темпе
                 </p>
               </CardContent>
             </Card>
@@ -423,18 +423,6 @@ const Index = () => {
                 <h3 className="text-xl font-semibold text-center">Практические задания</h3>
                 <p className="text-muted-foreground text-center">
                   Еженедельные упражнения и техники для закрепления навыков в реальной жизни
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-colors">
-              <CardContent className="pt-8 space-y-4">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                  <Icon name="MessageCircle" size={28} className="text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-center">Групповые сессии</h3>
-                <p className="text-muted-foreground text-center">
-                  Еженедельные встречи в малых группах для обмена опытом и поддержки
                 </p>
               </CardContent>
             </Card>
