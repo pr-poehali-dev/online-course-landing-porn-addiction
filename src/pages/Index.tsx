@@ -60,7 +60,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">О курсе</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Комплексная программа восстановления, основанная на современных психотерапевтических методиках
+              Программа, которая поможет вернуть контроль над своей жизнью
             </p>
           </div>
           
@@ -82,9 +82,9 @@ const Index = () => {
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto">
                   <Icon name="Brain" size={28} className="text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold text-center">Научный подход</h3>
+                <h3 className="text-xl font-semibold text-center">Проверенные методики</h3>
                 <p className="text-muted-foreground text-center">
-                  Методики основаны на доказательной психотерапии и нейробиологии
+                  То, что работает на практике, без сложных теорий
                 </p>
               </CardContent>
             </Card>
@@ -94,9 +94,9 @@ const Index = () => {
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                   <Icon name="Users" size={28} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-center">Поддержка 24/7</h3>
+                <h3 className="text-xl font-semibold text-center">Постоянная поддержка</h3>
                 <p className="text-muted-foreground text-center">
-                  Доступ к сообществу и специалистам в любое время
+                  Вы не останетесь один на один с проблемой
                 </p>
               </CardContent>
             </Card>
@@ -108,10 +108,10 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">Проблема требует решения</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Почему это важно</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Порнозависимость — это не вопрос силы воли. Это нейробиологическая проблема, 
-                которая влияет на дофаминовую систему мозга, создавая устойчивые паттерны поведения.
+                Зависимость — это не слабость характера. Это привычка, которая закрепилась в мозге. 
+                И её можно изменить, если знать как.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -157,8 +157,8 @@ const Index = () => {
                     <Icon name="Award" size={24} className="text-secondary-foreground" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Проверенные методики</p>
-                    <p className="text-sm text-muted-foreground">Основаны на CBT и ACT терапии</p>
+                    <p className="font-semibold text-lg">Работающие методы</p>
+                    <p className="text-sm text-muted-foreground">Проверенные на практике подходы</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -166,8 +166,8 @@ const Index = () => {
                     <Icon name="CheckCircle2" size={24} className="text-accent-foreground" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Результат</p>
-                    <p className="text-sm text-muted-foreground">87% участников достигают целей</p>
+                    <p className="font-semibold text-lg">Реальные результаты</p>
+                    <p className="text-sm text-muted-foreground">Большинство участников добиваются успеха</p>
                   </div>
                 </div>
               </div>
@@ -179,10 +179,9 @@ const Index = () => {
       <section id="solution" className="py-20 px-4 bg-gradient-to-br from-secondary/5 to-accent/5">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Научно обоснованное решение</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Как это работает</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Мы используем комплексный подход, сочетающий когнитивно-поведенческую терапию, 
-              практики осознанности и нейробиологические техники
+              Простая и понятная программа, основанная на том, что действительно помогает людям меняться
             </p>
           </div>
 
@@ -193,10 +192,10 @@ const Index = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
                     <Icon name="Lightbulb" size={24} className="text-accent" />
                   </div>
-                  <h3 className="text-xl font-semibold">Когнитивная перестройка</h3>
+                  <h3 className="text-xl font-semibold">Работа с мышлением</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Изменение негативных мыслительных паттернов и триггеров через структурированные упражнения CBT
+                  Учимся замечать и менять мысли, которые ведут к срывам
                 </p>
               </CardContent>
             </Card>
@@ -207,10 +206,10 @@ const Index = () => {
                   <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
                     <Icon name="Heart" size={24} className="text-secondary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Эмоциональная регуляция</h3>
+                  <h3 className="text-xl font-semibold">Управление эмоциями</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Развитие навыков управления стрессом, тревогой и эмоциональными состояниями без деструктивных привычек
+                  Находим здоровые способы справляться со стрессом и тревогой
                 </p>
               </CardContent>
             </Card>
@@ -221,10 +220,10 @@ const Index = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Icon name="Zap" size={24} className="text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Нейропластичность</h3>
+                  <h3 className="text-xl font-semibold">Перестройка привычек</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Техники для перепрограммирования дофаминовой системы и создания здоровых нейронных связей
+                  Мозг можно "переучить" — создаём новые, здоровые привычки
                 </p>
               </CardContent>
             </Card>
@@ -235,10 +234,10 @@ const Index = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
                     <Icon name="TrendingUp" size={24} className="text-accent" />
                   </div>
-                  <h3 className="text-xl font-semibold">Построение новых привычек</h3>
+                  <h3 className="text-xl font-semibold">Новый образ жизни</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Пошаговая система замены деструктивных паттернов на продуктивные и здоровые альтернативы
+                  Шаг за шагом заменяем вредные привычки на полезные
                 </p>
               </CardContent>
             </Card>
@@ -251,7 +250,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Программа курса</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Структурированный путь длительностью 7 недель с еженедельными модулями и практическими заданиями
+              7 недель пошаговой работы — каждую неделю новые знания и практика
             </p>
           </div>
 
