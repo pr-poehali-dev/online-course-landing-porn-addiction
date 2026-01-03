@@ -538,6 +538,15 @@ const Index = () => {
               <h3 className="font-semibold text-lg mb-3">Контакты</h3>
               <div className="space-y-2 text-sm text-primary-foreground/80">
                 <p>Email: sabrekov86.86@mail.ru</p>
+                <a 
+                  href="https://t.me/valerasabrekov" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+                >
+                  <Icon name="MessageCircle" size={16} />
+                  <span>Telegram: @valerasabrekov</span>
+                </a>
               </div>
             </div>
             <div>
