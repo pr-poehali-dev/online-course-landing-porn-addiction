@@ -31,7 +31,7 @@ const Index = () => {
               Путь к свободе от зависимости
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-              Научно обоснованная программа избавления от порнозависимости под руководством профессионалов
+              Практическая программа для тех, кто готов изменить свою жизнь
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
               <Button 
