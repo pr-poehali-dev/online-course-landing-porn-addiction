@@ -14,11 +14,7 @@ const Index = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent('Новая заявка на курс');
-    const body = encodeURIComponent(
-      `Имя: ${formData.name}\nEmail: ${formData.email}\nСообщение: ${formData.message || 'Не указано'}`
-    );
-    window.location.href = `mailto:sabrekov86.86@mail.ru?subject=${subject}&body=${body}`;
+    window.open('https://t.me/valerasabrekov', '_blank');
   };
 
   return (
