@@ -512,7 +512,7 @@ const Index = () => {
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6"
                 >
                   Связаться в Telegram
-                  <Icon name="Send" size={20} className="ml-2" />
+                  <Icon name="MessageCircle" size={20} className="ml-2" />
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center pt-4">
